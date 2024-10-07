@@ -46,16 +46,16 @@ def get_all_sketches() -> List[NXOpen.Sketch]:
 def main() :
     the_lw.Open()
     all_bodies: List[NXOpen.Body] = get_all_bodies()
-    for i in range(len(all_bodies)):
-        move_object_to_layer(all_bodies[i], 2)
+    for _, body in enumerate(all_bodies):
+        move_object_to_layer(body, 2)
     
     all_datum_planes: List[NXOpen.DatumPlane] = get_all_datum_planes()
-    for i in range(len(all_datum_planes)):
-        move_object_to_layer(all_datum_planes[i], 62)
+    for _, datum in enumerate(all_datum_planes):
+        move_object_to_layer(datum, 62)
 
     all_sketches: List[NXOpen.Sketch] = get_all_sketches()
-    for i in range(len(all_sketches)):
-        move_object_to_layer(all_sketches[i], 21)
+    for _, sketch in enumerate(all_sketches):
+        move_object_to_layer(sketch, 21)
 
 
 if __name__ == '__main__':
