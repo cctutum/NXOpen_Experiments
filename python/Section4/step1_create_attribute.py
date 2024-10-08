@@ -33,11 +33,12 @@ def create_string_attribute(nx_object: NXOpen.NXObject, title: str, value: str) 
 
 
 def main():
+    # Method-1: Using the builder
     for item in workPart.Bodies: # type: ignore
-        create_string_attribute(item, "Test", "HelloAgain")
+        create_string_attribute(item, "Test", "HelloAgain") # Body (workPart), Attribute title (name), Attribute value 
     
 
-    # or direct instead of using the builder
+    # Method-2: Seting directly (Instead of using the builder)
     for item in workPart.Bodies: # type: ignore
         item.SetUserAttribute('my_attribute_direct', -1, 'my_value', NXOpen.Update.Option.Now)
 
