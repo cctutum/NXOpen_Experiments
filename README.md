@@ -9,3 +9,5 @@
 [Automating Load Case Combination and Enveloping in Simcenter 3D using NXOpen + Python](https://www.m4-engineering.com/automating-load-case-combination-and-enveloping-in-simcenter-3d-using-nxopen-python/?utm_source=perplexity)
 
 [Automated circuit board vibration analysis reduces errors and results in 100x faster process](https://resources.sw.siemens.com/en-US/case-study-design-automation-associates)
+
+[Getting Started with NX Open](https://www.scribd.com/document/576145606/NXOpen-Getting-Started)
